@@ -11,7 +11,7 @@ export default defineConfig({
     logo: { src: "/logo.png", width: 24, height: 24 },
     nav: [
       { text: "首页", link: "/" },
-      { text: "文档", link: "/docs/users/install.md" },
+      { text: "文档", link: "/docs/users/start.md" },
     ],
 
     sidebar: [
