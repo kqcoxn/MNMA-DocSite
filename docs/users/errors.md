@@ -35,13 +35,51 @@
 
 如果您无法通过其他途径进入 Github 页面，或下载速度被限制，可以在 [QQ 群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) **群文件**内获取您需要的资源，包括 MNMA 压缩包、更新包等。
 
-或者，您可以使用 [Mirror 酱](../users/install.md#mirror-酱支持) 作为镜像源下载。
+或者，您可以使用 [Mirror 酱](../users/install.md#mirror-酱支持) 作为国内镜像源下载。
 
-### 更新失败
+### 更新失败/速度缓慢
 
-同上，可以在设计界面将 [Mirror 酱](../users/install.md#mirror-酱支持) 设为更新源。
+MNMA 的默认下载源为 Github。国内对于 Github 的防火墙时有时无，且速度非常不稳定。如果条件允许，请在网络代理或加速器环境下更新。
+
+或者，您可以在设置页面切换 [Mirror 酱](../users/install.md#mirror-酱支持) 作为国内镜像源更新。（需要自备 CDK）
+
+如果您不希望通过其他途径更新，您可以在[QQ 群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) **群文件**内下载最新版本的 MNMA 压缩包并重新安装。如果您希望保留配置，可以将旧版本的`/config`文件夹覆盖至新版本。
 
 ## 程序运行类
+
+### SSL Error
+
+尝试关闭代理/梯子，并重启 MNMA
+
+### Agent 加载失败
+
+基本是 Python 环境的问题。
+
+Python 包的默认下载源是国内，如果您配置了代理或加速器，可能是由于被拦截导致的，请关闭 MNMA 后关闭代理或加速器，再重新启动 MNMA 尝试。
+
+如果仍然无法解决，请按如下方法手动安装 Python 环境。
+
+首先，安装最新版 Python，可以参考：[【Bilibili】Python 安装教程](https://www.bilibili.com/video/BV1f3411t73m)，请确保 Python 版本大于等于 `3.9.x`
+
+然后，同时按下 `win + R` 键，输入 `cmd` 并点击确定。在弹出的终端中输入：
+
+```shell
+pip install maafw -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+待下载完毕，使用记事本或其他软件打开程序根目录 `/interface.json`，将 `agent` 字段的 `child_exec` 改为 `python`
+
+重启 MNMA 并重新尝试加载 Agent
+
+### 模拟器连接失败
+
+请先确保您的模拟器正常启动，得先开着模拟器才能连接到模拟器。
+
+如果模拟器已经启动，请检查模拟器是否已经开启本地 ADB：
+
+![图片加载中，请稍等...](./images/adb.png)
+
+如果您的模拟器没有此选项，请在 mumu12 官网重新下载最新版模拟器。
 
 ### 缺少 xxx.dll/运行库/目标计算机积极拒绝
 
@@ -60,35 +98,3 @@ winget install Microsoft.VCRedist.2017.x64 Microsoft.DotNet.DesktopRuntime.8
 ```
 
 在安装时，依次点下一步即可，建议不要随意更改环境运行库的安装路径。
-
-### Agent 加载失败
-
-基本是 Python 环境的问题，请按如下方法手动安装 Python 环境。
-
-首先，安装最新版 Python，可以参考：[【Bilibili】Python 安装教程](https://www.bilibili.com/video/BV1f3411t73m)，请确保 Python 版本大于等于 `3.9.x`
-
-然后，同时按下 `win + R` 键，输入 `cmd` 并点击确定。在弹出的终端中输入：
-
-```shell
-pip install maafw -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
-待下载完毕，使用记事本或其他软件打开程序根目录 `/interface.json`，将 `agent` 字段的 `child_exec` 改为 `python`
-
-重启 MNMA 并重新尝试加载 Agent
-
-### SSL Error
-
-尝试关闭代理/梯子，并重启 MNMA
-
-## 任务类
-
-### 清体力任务卡在配队界面
-
-> 此问题感谢交流群 **@寒江雪** 的协助测试
-
-确保电脑没有启用火绒或电脑管家等防火墙（360 已适配）
-
-或将 `MNMA根目录`、`MFAAvalonia.exe`、`/python/python.exe` 分别添加至杀毒软件白名单/信任区
-
-若还是不行，多半是系统环境有未知不兼容源，重装系统外无力回天（
