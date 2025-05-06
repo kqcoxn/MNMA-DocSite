@@ -19,16 +19,16 @@
 其中：
 
 - `MaaPiCli.exe` 为控制台应用
-- `MFAAvalonia.exe` 为 GUI 应用
+- `MNMA.exe` 为 GUI 应用
 
 如果您不是特别钟情于控制台应用，请直接双击运行 GUI。
 
-::: details 为什么 GUI 的图标是牛牛？
-MFAAvalonia 是 MaaFw 系列的 GUI 开源项目，因为 MaaFw 最早是由方舟的 Maa 演化而来，因此作者选择类似于 Maa 的牛牛图标作为 icon。
+::: details 为什么任务栏的图标是牛牛？
+MNMA 使用 MFAAvalonia 作为 GUI。MFAAvalonia 是 MaaFw 系列的 GUI 开源项目，因为 MaaFw 最早是由方舟的 Maa 演化而来，因此 MFAAvalonia 的作者选择类似于 Maa 的牛牛图标作为 icon，也因此牛牛图标会被保留。
 :::
 
 ::: tip
-您可以右键 `MFAAvalonia.exe`，并依次选择`(->win11:显示更多选项)`->`发送到`->`桌面快捷方式`在桌面创建一个快捷方式，方便以后在桌面直接启动。
+您可以右键 `MNMA.exe`，并依次选择`(->win11:显示更多选项)`->`发送到`->`桌面快捷方式`在桌面创建一个快捷方式，方便以后在桌面直接启动。
 :::
 
 如果在双击应用后弹出报错，请参考 [问题排查-程序运行类](../users/errors.md#程序运行类)

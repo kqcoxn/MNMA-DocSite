@@ -8,6 +8,10 @@ MNMA 是一款基于 [MaaFramework](https://github.com/MaaXYZ/MaaFramework) 与 
 
 如果在使用过程中遇到了问题、有更好的想法，或是单纯想要聊天吹水，欢迎加入 MNMA 交流群：[QQ 群（993245868）](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868)
 
+::: tip 注意
+**交流群内请遵守法律法规，也不要无故打扰其他群友，询问问题请在查阅本文档后礼貌提问。**
+:::
+
 ## 声明
 
 本软件开源、免费，仅供学习交流使用。若您遇到商家使用本软件进行代练并收费，可能是设备与时间等费用，产生的费用、问题及后果与本软件无关。
