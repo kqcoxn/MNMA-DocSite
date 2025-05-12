@@ -54,6 +54,10 @@ MNMA 的默认下载源为 Github。国内对于 Github 的防火墙时有时无
 
 尝试关闭代理/梯子，并重启 MNMA
 
+::: tip
+此问题并非由于 MNMA 导致，出现了此提示代表您可能使用了未配置安全凭证的梯子，或代理通道识别异常。
+:::
+
 ### Agent 加载失败
 
 基本是 Python 环境的问题。
@@ -86,7 +90,7 @@ pip install maafw -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 ### 缺少 xxx.dll/运行库
 
-对于 Windows 需要在运行前安装运行库。
+对于 Windows/MacOS 用户，需要在运行前安装运行库。
 
 MNMA 需要 `VCRedist x64` (`Cli` 与 `Gui` 都需要) 和 `.NET 8` (使用 `GUI` 时需要)。
 

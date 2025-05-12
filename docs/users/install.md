@@ -25,12 +25,12 @@
 注意事项：
 
 - MNMA 在 Windows 下仅支持 10 和 11，旧版 Windows 请参阅 [MAA 常见问题](https://maa.plus/docs/zh-cn/manual/faq.html#%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98) 中的系统问题部分。
-- MNMA 暂不支持搭载 `Intel` 芯片的 MacBook，您可以使用苹果系统自带的多系统功能安装 `Windows` 系统，并使用 `Windows` 版 MNMA
+- MNMA 暂不支持搭载 `Intel` 芯片的 MacBook（包括双系统），`M`系列芯片请首先安装 [运行库](./errors.md#缺少-xxx-dll-运行库) 再继续后续步骤。
 - 若您希望使用 `Android` 实体设备，请前往[此页面](https://maa.plus/docs/zh-cn/manual/device/android.html)。 由于此方法涉及 adb 调试且仍需与电脑连接，不推荐入门玩家使用此方法。
 
 ## \*Mirror 酱支持 <Badge type="tip" text="^0.3.5" />
 
-在 [玛丽佬](https://github.com/MistEO)（方舟 MAA 开发者）的帮助下， MNMA 同样也支持 [Mirror 酱](https://mirrorchyan.com/zh/projects) 的国内高速下载与更新服务，详情请见[【Bilibili】震惊！MAA 开启收费功能？！](https://www.bilibili.com/video/BV1cZFreLEja)
+在 [玛丽佬](https://github.com/MistEO)（方舟 MAA 开发者）的帮助下， MNMA 同样也接入了 [Mirror 酱](https://mirrorchyan.com/zh/projects) 的国内高速下载与更新服务，详情请见[【Bilibili】震惊！MAA 开启收费功能？！](https://www.bilibili.com/video/BV1cZFreLEja)
 
 您可以通过 [此链接](https://mirrorchyan.com/zh/projects?rid=MNMA) 获取带有 Mirror 酱服务的 MNMA
 
