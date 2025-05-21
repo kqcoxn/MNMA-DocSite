@@ -24,9 +24,10 @@
 
 注意事项：
 
-- MNMA 在 Windows 下仅支持 10 和 11，旧版 Windows 请参阅 [MAA 常见问题](https://maa.plus/docs/zh-cn/manual/faq.html#%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98) 中的系统问题部分。
-- MNMA 暂不支持搭载 `Intel` 芯片的 MacBook（包括双系统），`M`系列芯片请首先安装 [运行库](./errors.md#缺少-xxx-dll-运行库) 再继续后续步骤。
-- 若您希望使用 `Android` 实体设备，请前往[此页面](https://maa.plus/docs/zh-cn/manual/device/android.html)。 由于此方法涉及 adb 调试且仍需与电脑连接，不推荐入门玩家使用此方法。
+- MNMA 在 **Windows 下仅支持 10 和 11**，旧版 Windows 请参阅 [MAA 常见问题](https://maa.plus/docs/zh-cn/manual/faq.html#%E7%B3%BB%E7%BB%9F%E9%97%AE%E9%A2%98) 中的系统问题部分。
+- MNMA **暂不支持搭载 `Intel` 芯片的 MacBook**（包括双系统），`M`系列芯片建议进入交流群与群主说明后进行远程协助安装。
+- MNMA 对于 Linux 的支持程度有限，仅打包可运行文件，如何运行与连接请自行探索。
+- 若您希望操控 `Android` 实体设备，请前往[此页面](https://maa.plus/docs/zh-cn/manual/device/android.html)。 由于此方法涉及 adb 调试且仍需与电脑连接，不推荐使用此方法。
 
 ## \*Mirror 酱支持 <Badge type="tip" text="^0.3.5" />
 

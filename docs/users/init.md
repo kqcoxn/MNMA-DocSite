@@ -12,6 +12,10 @@
 
 ## 启动 MNMA
 
+### Windows 用户
+
+> 本节为 `MaaNewMoonAccompany-win-x86_64-vx.x.x.zip` 文件相关说明，mac 用户请跳过此部分。
+
 在配置好模拟器后，返回解压的文件夹，可以在文件夹内找到如下两个文件：
 
 ![图片加载中，请稍等...](./images/dir.png)
@@ -32,6 +36,35 @@ MNMA 使用 MFAAvalonia 作为 GUI。MFAAvalonia 是 MaaFw 系列的 GUI 开源�
 :::
 
 如果在双击应用后弹出报错，请参考 [问题排查-程序运行类](../users/errors.md#程序运行类)
+
+### MacOS 用户
+
+> 本节为 `MaaNewMoonAccompany-macos-aarch64-vx.x.x.zip` 文件相关说明，windows 用户请跳过此部分。
+
+首先在 [.NET 官网](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0) 下载 `.NET 8.0`
+
+![图片加载中，请稍等...](./images/.net8.png)
+
+下载完成后安装压缩包内的 `pkg` 文件，所有选项默认即可。
+
+在配置好模拟器后，返回解压的文件夹，打开命令行窗口，并将工作目录 cd 至 MNMA 根目录，依次执行：
+
+```shell
+pip install maafw==4.2.0
+sudo chmod 777 MFAAvalonia
+sudo chmod +x ./MFAAvalonia
+sudo ./MFAAvalonia
+```
+
+若程序未打开，请双击运行 MNMA 目录下 `MFAAvalonia` 文件。
+
+**第二次及之后运行 MNMA 无需再执行上述命令，直接双击运行即可。**
+
+::: details 为什么 MNMA 的图标是牛牛？
+MNMA 使用 MFAAvalonia 作为 GUI。MFAAvalonia 是 MaaFw 系列的 GUI 开源项目，因为 MaaFw 最早是由方舟的 Maa 演化而来，因此 MFAAvalonia 的作者选择类似于 Maa 的牛牛图标作为 icon，也因此牛牛图标会被保留。
+:::
+
+如果在双击应用后弹出报错或无法运行，请加入交流群请求帮助。
 
 ## 连接模拟器
 
