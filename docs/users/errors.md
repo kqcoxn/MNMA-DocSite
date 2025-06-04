@@ -7,11 +7,12 @@
 1. 确保**模拟器使用 mumu12**，模拟器**设置开启本地 ADB**，**分辨率比例为 16:9**
 2. 确保电脑**没有启用火绒或电脑管家**等防火墙，或已将 MNMA 添加至所有杀毒软件的信任文件中
 3. 确保没有其他游戏脚本类软件在操作模拟器
-4. **确保 MNMA 为最新版本**
+4. **确保 MNMA 为最新版本，或尝试重装最新版 MNMA**
 5. 尝试使用**管理员权**限打开 MNMA
-6. 关闭 MNMA、模拟器后，在任务管理器中强制结束 `adb.exe` 运行或重启电脑，然后重新尝试。
+6. 关闭 MNMA、模拟器后，在任务管理器中强制结束 `adb.exe` 运行，然后重新尝试。
+7. **重启电脑可以解决 99%的问题！**
 
-若以上问题均未解决，请继续阅读。
+若以上操作后问题仍未解决，请继续阅读。
 
 ## 反馈问题
 
@@ -38,7 +39,7 @@
 
 如果您无法通过其他途径进入 Github 页面，或下载速度被限制，可以在 [QQ 群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) **群文件**内获取您需要的资源，包括 MNMA 压缩包、更新包等。
 
-或者，您可以使用 [Mirror 酱](../users/install.md#mirror-酱支持) 作为国内镜像源下载。
+或者，您可以使用 [Mirror 酱](../users/install.md#mirror-酱支持) 作为国内镜像源下载。（需要自备 CDK）
 
 ### 更新失败/速度缓慢
 
@@ -46,7 +47,15 @@ MNMA 的默认下载源为 Github。国内对于 Github 的防火墙时有时无
 
 或者，您可以在设置页面切换 [Mirror 酱](../users/install.md#mirror-酱支持) 作为国内镜像源更新。（需要自备 CDK）
 
-如果您不希望通过其他途径更新，您可以在[QQ 群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) **群文件**内下载最新版本的 MNMA 压缩包并重新安装。如果您希望保留配置，可以将旧版本的`/config`文件夹覆盖至新版本。
+如果您不希望通过其他途径更新，您可以在[QQ 群](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=VMC132QhbMDLi5U62MlDRvtCMj9WOXRr&authKey=yJNKO4sQ%2BBFHpBCLSSEvVOAyz%2FPjknNSl70W3ugg2%2BpELnKmEiHamj1emJMWcLwQ&noverify=0&group_code=993245868) **群文件**内下载最新版本的 MNMA 压缩包并重新安装。
+
+如果您希望保留配置，可以将旧版本的`/config`文件夹覆盖至新版本。
+
+### 获取最新版本信息失败
+
+若描述为 CDK 无效，请在设置内将下载源调整为 Github，或关闭自动检查/更新。
+
+也可以输入 mirrorc CDK，详情参考 [Mirror 酱支持](./install.md#mirror-酱支持)
 
 ## 程序运行类
 
@@ -64,19 +73,7 @@ MNMA 的默认下载源为 Github。国内对于 Github 的防火墙时有时无
 
 Python 包的默认下载源是国内，如果您配置了代理或加速器，可能是由于被拦截导致的，请关闭 MNMA 后关闭代理或加速器，再重新启动 MNMA 尝试。
 
-如果仍然无法解决，请按如下方法手动安装 Python 环境。
-
-首先，安装最新版 Python，可以参考：[【Bilibili】Python 安装教程](https://www.bilibili.com/video/BV1f3411t73m)，请确保 Python 版本大于等于 `3.9.x`
-
-然后，同时按下 `win + R` 键，输入 `cmd` 并点击确定。在弹出的终端中输入：
-
-```shell
-pip install maafw -i https://pypi.tuna.tsinghua.edu.cn/simple
-```
-
-待下载完毕，使用记事本或其他软件打开程序根目录 `/interface.json`，将 `agent` 字段的 `child_exec` 改为 `python`
-
-重启 MNMA 并重新尝试加载 Agent
+如果仍然无法解决，请进群询问。
 
 ### 模拟器连接失败
 
