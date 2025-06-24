@@ -18,7 +18,7 @@
 
 在配置好模拟器后，返回解压的文件夹，可以在文件夹内找到如下两个文件：
 
-![图片加载中，请稍等...](./images/dir.png)
+![图片加载中，请稍等...](/users/dir.png)
 
 其中：
 
@@ -45,7 +45,7 @@ MNMA 使用 MFAAvalonia 作为 GUI。MFAAvalonia 是 MaaFw 系列的 GUI 开源�
 
 首先在 [.NET 官网](https://dotnet.microsoft.com/zh-cn/download/dotnet/8.0) 下载 `.NET 8.0`
 
-![图片加载中，请稍等...](./images/.net8.png)
+![图片加载中，请稍等...](/users/.net8.png)
 
 下载完成后安装压缩包内的 `pkg` 文件，所有选项默认即可。
 
@@ -74,7 +74,7 @@ MNMA 使用 MFAAvalonia 作为 GUI。MFAAvalonia 是 MaaFw 系列的 GUI 开源�
 
 打开 MNMA 后，面板右侧日志将会提示目前的状态：
 
-![图片加载中，请稍等...](./images/init.png)
+![图片加载中，请稍等...](/users/init.png)
 
 :::tip
 

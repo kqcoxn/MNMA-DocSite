@@ -6,7 +6,7 @@
 
 首先，打开 [MNMA Github Release 页面](https://github.com/kqcoxn/MaaNewMoonAccompanying/releases)。
 
-![图片加载中，请稍等...](./images/release.png)
+![图片加载中，请稍等...](/users/release.png)
 
 ::: tip
 如果 Github 页面打不开，请参考 [问题排查 - Github 页面打不开/下载缓慢](../users/errors.md#github-页面打不开-下载缓慢)
@@ -16,7 +16,7 @@
 
 下载适合自己系统的版本，目前 MNMA 支持 `Windows`、`Linux` 和 `MacOS` 系统，找到 `Assets` 列表中包含系统字段，点击链接即可下载。
 
-![图片加载中，请稍等...](./images/assets.png)
+![图片加载中，请稍等...](/users/assets.png)
 
 ::: tip
 如果下载缓慢，请参考 [问题排查 - Github 页面打不开/下载缓慢](../users/errors.md#github-页面打不开-下载缓慢)
@@ -29,7 +29,7 @@
 - MNMA 对于 Linux 的支持程度有限，仅打包可运行文件，如何运行与连接请自行探索。
 - 若您希望操控 `Android` 实体设备，请前往[此页面](https://maa.plus/docs/zh-cn/manual/device/android.html)。 由于此方法涉及 adb 调试且仍需与电脑连接，不推荐使用此方法。
 
-## \*Mirror 酱支持 <Badge type="tip" text="^0.3.5" />
+## \*Mirror 酱支持
 
 在 [玛丽佬](https://github.com/MistEO)（方舟 MAA 开发者）的帮助下， MNMA 同样也接入了 [Mirror 酱](https://mirrorchyan.com/zh/projects?source=mnma-docsite) 的国内高速下载与更新服务，详情请见[【Bilibili】震惊！MAA 开启收费功能？！](https://www.bilibili.com/video/BV1cZFreLEja)
 
